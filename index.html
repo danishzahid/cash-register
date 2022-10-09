@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
     <link rel="stylesheet" href="style.css">
     <title>Cash Register</title>
 </head>
@@ -15,7 +16,7 @@
         <input id="bill-amount" type="text" placeholder="Enter bill amount"/>
         <label for="cash-given">Cash Given:</label>
         <input id="cash-given" type="text" placeholder="Cash given by customer"/>
-        <button id="check-btn">Check</button>
+        <button id="check-btn"><strong>Check!</strong></button>
         <table class="change-table">
             <caption>Return Change</caption>
             <tr>
@@ -44,6 +45,9 @@
             </tr>
         </table>
         <div id="comment"></div>
+        <div class="portfolio">
+            <a href="https://clbydanish.netlify.app">Project by Danish Zahid</a>
+        </div>
     </div>
     <script src="index.js"></script>
 </body>
