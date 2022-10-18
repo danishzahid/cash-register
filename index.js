@@ -5,6 +5,7 @@ var comment = document.querySelector("#comment");
 const noOfNotes = document.querySelectorAll(".no-of-notes");
 
 
+
 const listOfNotes = [2000,500,200,100,50,20,10,5,1];
 
 function calculateChange(amount){
@@ -16,9 +17,9 @@ function calculateChange(amount){
 }
 
 checkBtn.addEventListener("click", function clickHandler(e){
-    if(billAmount.value > 0){
-        if(cashGiven.value >= billAmount.value){
-            const calculateDifference = cashGiven.value - billAmount.value;
+    if(Number(billAmount.value) > 0){
+        if(Number(cashGiven.value) >= Number(billAmount.value)){
+            const calculateDifference = Number(cashGiven.value) - Number(billAmount.value);
             calculateChange(calculateDifference); 
         } 
         else
